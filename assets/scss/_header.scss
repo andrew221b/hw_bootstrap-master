@@ -3,17 +3,3 @@
   width: 100%;
   height: 30px;
 }
-
-.header-btn-flex {
-   @media (max-width: 1920px) {
-   display: flex;
-   justify-content: flex-end;
-   }
-}
-
-.header-btn2-flex {
-    @media (max-width: 1920px) {
-    display: flex;
-    justify-content: flex-start;
-    }
- }
