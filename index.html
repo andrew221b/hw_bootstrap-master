@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="header mb-3 bg-primary sticky-top">
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-4 my-1">
+          <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
+
+            <a class="navbar-brand" href="#"><img class="navbar-logo" src="assets/img/logo/random-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+              aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07" bis_skin_checked="1">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    aria-expanded="false">Dropdown</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+        <div class="col-md-2 col-sm-3 col-4 my-auto header-btn-flex">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign Up
+          </button>
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-4 my-auto header-btn2-flex">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+            Sign In
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal 1-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content rounded-4 shadow" bis_skin_checked="1">
+    <div class="modal-header p-4 pb-4 border-bottom-0" bis_skin_checked="1">
+      <!-- <h5 class="modal-title">Modal title</h5> -->
+      <h2 class="fw-bold mb-0">Sign up for free</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+
+    <div class="modal-body p-4 pt-0" bis_skin_checked="1">
+      <form class="">
+        <div class="form-floating mb-3" bis_skin_checked="1">
+          <input type="email" class="form-control rounded-3" id="floatingInput"
+            placeholder="name@example.com">
+          <label for="floatingInput">Email Street</label>
+        </div>
+        <div class="form-floating mb-3" bis_skin_checked="1">
+          <input type="password" class="form-control rounded-3" id="floatingPassword"
+            placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+        <small class="text-light">By clicking Sign up, you agree to the terms of use.</small>
+        <hr class="my-4">
+        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+        <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-3" type="submit">
+          <svg class="bi me-1" width="16" height="16">
+            <use xlink:href="#twitter"></use>
+          </svg>
+          Sign up with Twitter
+        </button>
+        <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-3" type="submit">
+          <svg class="bi me-1" width="16" height="16">
+            <use xlink:href="#facebook"></use>
+          </svg>
+          Sign up with Facebook
+        </button>
+        <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-3" type="submit">
+          <svg class="bi me-1" width="16" height="16">
+            <use xlink:href="#github"></use>
+          </svg>
+          Sign up with GitHub
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+<!-- Modal 2-->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow" bis_skin_checked="1">
+      <div class="modal-header p-4 pb-4 border-bottom-0" bis_skin_checked="1">
+        <h2 class="fw-bold mb-0">Sign In</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-4 pt-0" bis_skin_checked="1">
+        <form class="">
+          <div class="form-floating mb-3" bis_skin_checked="1">
+            <input type="email" class="form-control rounded-3" id="floatingInput"
+              placeholder="name@example.com">
+            <label for="floatingInput">Email adress</label>
+          </div>
+          <div class="form-floating mb-3" bis_skin_checked="1">
+            <input type="password" class="form-control rounded-3" id="floatingPassword"
+              placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign in</button>
+          <small class="text-light">By clicking Sign in, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="main mb-3 container-fluid">
+
+    <div class="row g-4">
+      <div class="col-xl-8 col-md-8 bg-dark">
+        <div class="px-4 mb-5 text-center border-bottom" bis_skin_checked="1">
+          <h1 class="display-4 fw-bold">Centered screenshot</h1>
+          <div class="col-lg-6 mx-auto" bis_skin_checked="1">
+            <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores praesentium accusantium, tempora maiores, incidunt adipisci tenetur sed nulla sint rerum quis ullam, eum delectus nesciunt exercitationem corporis ut consequuntur neque? Iste eos iusto aspernatur voluptate veniam necessitatibus doloribus quam?</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5" bis_skin_checked="1">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 40vh;" bis_skin_checked="1">
+            <div class="container px-5" bis_skin_checked="1">
+              <img src="assets/img/main_img/main-img.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                alt="Example image" width="700" height="500" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion mb-5" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                First Topic
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius quas explicabo nihil similique
+                possimus eum, amet corrupti dignissimos asperiores accusantium fugiat modi quam odio minus, quod aliquam
+                nostrum facere perspiciatis praesentium quis voluptatem? Ducimus sint commodi nam? Culpa veniam cumque
+                autem quo, rerum nostrum assumenda. Esse totam quae minus laudantium libero ullam sequi eius minima.
+                Earum maiores ut rerum eligendi facere corporis porro, praesentium iure magnam aspernatur quia
+                voluptatem quos impedit est adipisci ipsa distinctio vel beatae necessitatibus, at itaque unde in iusto
+                dolorem! Consectetur exercitationem asperiores explicabo mollitia sequi quibusdam possimus excepturi
+                omnis autem accusamus voluptate ratione laboriosam, provident quaerat rem. Assumenda, velit iure.
+                Accusamus quis officia id, reiciendis sequi accusantium numquam natus ipsa delectus eius ad dignissimos
+                inventore repellat porro commodi soluta tenetur similique laboriosam minima quia dicta tempora quae? Eum
+                pariatur, ipsum doloremque exercitationem illum soluta, quaerat minima dolore modi deserunt quibusdam,
+                laborum iste a perferendis recusandae explicabo accusamus corrupti mollitia? Quis, recusandae, incidunt
+                temporibus nam neque pariatur, ipsum repellat odio laboriosam nostrum ex labore asperiores. Consequuntur
+                nulla quas vero officia in officiis excepturi similique ab nam saepe? Obcaecati consequuntur dolore
+                voluptatum amet, maiores laborum accusamus in ut deleniti nihil adipisci delectus beatae tempora quas
+                quisquam!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Second Topic
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nihil aliquid, ullam ipsam molestias
+                odit dolorem harum pariatur at aliquam unde voluptatibus tempore quasi mollitia voluptates. Numquam
+                repellat est sit optio animi laudantium quae porro minus quas, reprehenderit quaerat at mollitia eaque
+                perspiciatis repellendus alias similique culpa? Obcaecati maiores quibusdam non sed vero quasi incidunt
+                adipisci, corporis omnis molestias, ex nobis accusamus iste enim eligendi excepturi quo quidem modi
+                veniam reiciendis dicta, aut cum earum! Voluptatibus delectus porro cumque velit. Amet, incidunt. A
+                porro doloremque est doloribus rem hic commodi obcaecati soluta minima asperiores eius alias iusto quis
+                laboriosam, itaque nam praesentium officiis voluptate deleniti libero consequatur temporibus amet.
+                Delectus ex praesentium ut voluptatem iste illo est doloribus, hic tempora ipsam laudantium ducimus
+                vitae officiis optio quam assumenda ad tempore magnam alias. Sint error ab et facilis iste deleniti
+                officia beatae mollitia, aspernatur recusandae ratione, iusto aperiam nulla quos, aliquid ipsam tenetur
+                molestias! Sapiente minima corporis modi ut voluptates, placeat fugiat voluptatibus ullam error at
+                suscipit, tempora distinctio iure. Architecto quas, rerum quae molestias, enim repellendus fugit illum
+                vero rem saepe neque in id et ad. Facere facilis fugit laudantium incidunt laborum aspernatur dolorum
+                maiores ab animi, illo, accusantium eaque id et amet cum, velit vero quia a rerum! Sed quibusdam culpa,
+                adipisci dicta quod obcaecati ea optio ut aliquid, possimus mollitia amet! Aspernatur exercitationem
+                laboriosam soluta qui praesentium, voluptatum dicta sint? Quaerat laborum explicabo at, praesentium
+                dolor fugiat aspernatur eos eius alias asperiores dignissimos veritatis hic quas veniam recusandae.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Third Topic
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque non fugit sapiente accusantium
+                voluptatem accusamus neque aliquam distinctio ab adipisci recusandae harum vitae autem, omnis possimus
+                quis? Nulla odio magni pariatur molestias qui expedita vero animi eius aperiam esse? Commodi iste
+                facilis corporis? Obcaecati iste fugiat nostrum reiciendis, dolore perspiciatis repellendus soluta
+                facere ullam, labore at eaque quos, repudiandae doloribus sequi impedit repellat optio sint rerum ea
+                omnis. Explicabo laboriosam enim mollitia corrupti consequatur officia repellat blanditiis nulla,
+                provident libero non iusto ad molestiae dolorem modi exercitationem praesentium maxime, beatae, magnam
+                incidunt architecto? Dolor debitis expedita libero distinctio, sapiente laborum quia provident modi
+                laboriosam! Similique deserunt veritatis voluptates dolor nam. Harum adipisci ab praesentium debitis
+                itaque! Aut modi quidem explicabo exercitationem libero velit cumque aliquid, similique sit atque
+                corrupti incidunt eum eligendi voluptates magni doloribus natus, voluptate laudantium iusto! Est debitis
+                ut corporis libero dolorum quidem! Maxime omnis quod sunt dolores dicta officia. Laborum delectus
+                officia cupiditate non! Tempore exercitationem earum eligendi laboriosam, quod minus maiores dolorem
+                error sint ab mollitia quo eius quidem officia distinctio eos. Illum doloribus voluptate magnam ut omnis
+                quos doloremque fugit cum fugiat maiores culpa quisquam dignissimos itaque optio laborum, necessitatibus
+                vel adipisci asperiores. Rerum. </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top"
+                alt="Hollywood Sign on The Hill" />
+              <div class="card-body bg-info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+                alt="Palm Springs Road" />
+              <div class="card-body bg-info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+                alt="Los Angeles Skyscrapers" />
+              <div class="card-body bg-info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                  additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
+                alt="Skyscrapers" />
+              <div class="card-body bg-info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-2 col-md-12 order-xl-first order-md-last">
+        <form class="row sticky">
+          <div class="col-12">
+            <label for="inputCountry" class="form-label">Country</label>
+            <input type="email" class="form-control" id="inputCountry" required="">
+          </div>
+          <div class="col-12">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="password" class="form-control" id="inputCity">
+          </div>
+          <div class="col-12">
+            <label for="inputStreet" class="form-label">Street</label>
+            <input type="text" class="form-control" id="inputStreet" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputPersons" class="form-label">Number of Persons</label>
+            <input type="text" class="form-control" id="inputPersons">
+          </div>
+          <div class="col-12">
+            <label for="startDate">Start Date</label>
+            <input id="startDate" class="form-control" type="date" />
+            <span id="startDateSelected"></span>
+          </div>
+          <div class="col-12">
+            <label for="endDate">End Date</label>
+            <input id="endDate" class="form-control" type="date" />
+            <span id="endDateSelected"></span>
+          </div>
+          <div class="col-12 ps-3 pb-3 g-1">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12 g-1 text-center py-1">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-xl-2 col-md-4 order-xl-last carousel-flex-h">
+        <div id="carouselExampleCaptions" class="carousel slide sticky" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/carousel_img/sky1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/carousel_img/sky2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/carousel_img/sky3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer bg-primary mb-3">
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+        </ul>
+        <p class="text-center text-light">© 2022 Company, Inc</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

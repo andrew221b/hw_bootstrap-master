@@ -1,0 +1,34 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #ffaa00;
+    text-shadow: 0 0 10px #ffaa00;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #28394e !important;
+
+    @media (max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(#006473, var(--bs-bg-opacity)) !important;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+.navbar {
+    justify-content: flex-start;
+}
+
+.carousel-caption {
+    bottom: 5.25em;
+}
